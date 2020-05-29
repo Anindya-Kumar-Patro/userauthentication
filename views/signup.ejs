@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head> 
+    <titile> SIGNUP</titile>
+</head>
+<body>
+    <h1>Signup Page</h1>
+    <style> 
+        div {
+            background-color: rgb(174, 171, 185);
+            width: 300px;
+            border: 15px solid rgb(8, 3, 27);
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+    <form action="/auth/signup" method="post">
+        <label for="name">Username</label>
+        <input type="text" name="username" id="name" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <input type="submit" value="Signup">
+    </form>
+    <label>Already Registered Account?</label>
+    <a href="/login">Login</a>
+</body> 
+</html>
